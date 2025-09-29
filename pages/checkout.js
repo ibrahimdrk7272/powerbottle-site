@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { ArrowLeft, CreditCard, Truck, Shield, RefreshCw } from 'lucide-react'
 import Layout from '../components/Layout'
@@ -78,9 +79,9 @@ export default function CheckoutPage() {
             <h1 className="text-2xl font-bold text-gray-900 mb-4">
               Sepetiniz boş
             </h1>
-            <a href="/" className="btn-primary">
+            <Link href="/" className="btn-primary">
               Alışverişe Başla
-            </a>
+            </Link>
           </div>
         </div>
       </Layout>
@@ -104,10 +105,10 @@ export default function CheckoutPage() {
           <div className="container-custom py-8">
             {/* Header */}
             <div className="mb-8">
-              <a href="/cart" className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-4">
+              <Link href="/cart" className="inline-flex items-center text-primary-600 hover:text-primary-700 mb-4">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Sepete Dön
-              </a>
+              </Link>
               <h1 className="text-3xl font-bold text-gray-900">
                 Ödeme
               </h1>
@@ -315,9 +316,9 @@ export default function CheckoutPage() {
                   
                   <p className="text-xs text-gray-500 text-center mt-4">
                     Ödeme yaparak{' '}
-                    <a href="/terms" className="underline hover:no-underline">
+                    <Link href="/terms" className="underline hover:no-underline">
                       kullanım şartlarını
-                    </a>{' '}
+                    </Link>{' '}
                     kabul etmiş olursunuz.
                   </p>
                 </div>

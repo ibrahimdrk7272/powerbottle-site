@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Mail, Check } from 'lucide-react'
+import Link from 'next/link'
 import toast from 'react-hot-toast'
 
 export default function Newsletter({ content }) {
@@ -93,9 +94,9 @@ export default function Newsletter({ content }) {
                 
                 <p className="text-sm opacity-75 mt-4">
                   E-posta adresinizi paylaşarak{' '}
-                  <a href="/privacy" className="underline hover:no-underline">
+                  <Link href="/privacy" className="underline hover:no-underline">
                     gizlilik politikamızı
-                  </a>{' '}
+                  </Link>{' '}
                   kabul etmiş olursunuz.
                 </p>
               </form>

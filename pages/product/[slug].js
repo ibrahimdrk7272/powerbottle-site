@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 import { motion } from 'framer-motion'
 import { ShoppingCart, Heart, Share2, Star, Check, Truck, Shield, RefreshCw } from 'lucide-react'
@@ -192,9 +193,9 @@ export default function ProductPage({ product }) {
               <div className="space-y-6">
                 {/* Breadcrumb */}
                 <nav className="text-sm text-gray-500">
-                  <a href="/" className="hover:text-primary-600">Ana Sayfa</a>
+                  <Link href="/" className="hover:text-primary-600">Ana Sayfa</Link>
                   <span className="mx-2">/</span>
-                  <a href="/product" className="hover:text-primary-600">Ürünler</a>
+                  <Link href="/product" className="hover:text-primary-600">Ürünler</Link>
                   <span className="mx-2">/</span>
                   <span className="text-gray-900">{product.name}</span>
                 </nav>
