@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { Mail, Phone, MapPin, Clock, Send, CheckCircle } from 'lucide-react'
 import Layout from '../components/Layout'
@@ -313,12 +314,12 @@ export default function ContactPage() {
                   <p className="text-gray-600 mb-4">
                     Belki de aradığınız cevap SSS bölümünde mevcut.
                   </p>
-                  <a
+                  <Link
                     href="/#faq"
                     className="btn-secondary inline-flex items-center gap-2"
                   >
                     SSS'yi İncele
-                  </a>
+                  </Link>
                 </div>
                 
                 {/* Social Media */}

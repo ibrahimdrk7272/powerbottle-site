@@ -19,7 +19,7 @@ export default function Hero({ content }) {
     }, 5000)
     
     return () => clearInterval(interval)
-  }, [])
+  }, [heroImages.length])
   
   const fadeInUp = {
     initial: { opacity: 0, y: 30 },

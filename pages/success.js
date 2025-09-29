@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 import { motion } from 'framer-motion'
 import { CheckCircle, Package, Mail, Phone, Home } from 'lucide-react'
 import Layout from '../components/Layout'
@@ -219,18 +220,18 @@ export default function SuccessPage() {
               
               {/* Actions */}
               <div className="flex flex-col sm:flex-row gap-4">
-                <a
+                <Link
                   href="/"
                   className="btn-primary flex-1 text-center"
                 >
                   Alışverişe Devam Et
-                </a>
-                <a
+                </Link>
+                <Link
                   href="/contact"
                   className="btn-secondary flex-1 text-center"
                 >
                   İletişime Geç
-                </a>
+                </Link>
               </div>
             </motion.div>
           </div>
