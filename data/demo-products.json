@@ -1,0 +1,115 @@
+[
+  {
+    "id": "powerbottle-1l",
+    "name": "PowerBottle 1L",
+    "description": "Sporcular için özel olarak tasarlanmış 1L kapasiteli dumbbell formunda su bidonu. BPA-free malzeme ile üretilmiş, çatlamaya karşı dayanıklı yapı.",
+    "price": 299,
+    "originalPrice": 399,
+    "images": [
+      "/images/product-1l-1.jpg",
+      "/images/product-1l-2.jpg",
+      "/images/product-1l-3.jpg",
+      "/images/product-1l-4.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Siyah",
+        "value": "black",
+        "price": 299,
+        "stock": 50
+      },
+      {
+        "name": "Mavi",
+        "value": "blue", 
+        "price": 299,
+        "stock": 30
+      },
+      {
+        "name": "Kırmızı",
+        "value": "red",
+        "price": 299,
+        "stock": 25
+      }
+    ],
+    "stock": 105,
+    "weight": "450g",
+    "capacity": "1L",
+    "features": [
+      "BPA-free malzeme",
+      "Sızdırmaz kapak sistemi",
+      "Ergonomik dumbbell tasarımı",
+      "Çatlamaya karşı dayanıklı",
+      "Kolay temizlenebilir",
+      "Dishwasher safe"
+    ],
+    "specifications": {
+      "material": "BPA-free plastik",
+      "capacity": "1L",
+      "weight": "450g",
+      "dimensions": "25cm x 8cm x 8cm",
+      "temperature": "-20°C ile +80°C"
+    },
+    "isActive": true,
+    "slug": "powerbottle-1l",
+    "seoTitle": "PowerBottle 1L - Sporcular için Su Bidonu",
+    "seoDescription": "PowerBottle 1L, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu. BPA-free, dayanıklı ve ergonomik tasarım.",
+    "category": "su-bidonu"
+  },
+  {
+    "id": "powerbottle-1-5l",
+    "name": "PowerBottle 1.5L",
+    "description": "Daha büyük kapasiteli 1.5L PowerBottle. Uzun antrenmanlar için ideal, aynı ergonomik dumbbell tasarımı ile daha fazla su kapasitesi.",
+    "price": 349,
+    "originalPrice": 449,
+    "images": [
+      "/images/product-1-5l-1.jpg",
+      "/images/product-1-5l-2.jpg", 
+      "/images/product-1-5l-3.jpg",
+      "/images/product-1-5l-4.jpg"
+    ],
+    "variants": [
+      {
+        "name": "Siyah",
+        "value": "black",
+        "price": 349,
+        "stock": 40
+      },
+      {
+        "name": "Mavi",
+        "value": "blue",
+        "price": 349,
+        "stock": 35
+      },
+      {
+        "name": "Yeşil",
+        "value": "green",
+        "price": 349,
+        "stock": 20
+      }
+    ],
+    "stock": 95,
+    "weight": "650g",
+    "capacity": "1.5L",
+    "features": [
+      "BPA-free malzeme",
+      "Sızdırmaz kapak sistemi", 
+      "Ergonomik dumbbell tasarımı",
+      "Çatlamaya karşı dayanıklı",
+      "Kolay temizlenebilir",
+      "Dishwasher safe",
+      "Daha büyük kapasite"
+    ],
+    "specifications": {
+      "material": "BPA-free plastik",
+      "capacity": "1.5L", 
+      "weight": "650g",
+      "dimensions": "28cm x 9cm x 9cm",
+      "temperature": "-20°C ile +80°C"
+    },
+    "isActive": true,
+    "slug": "powerbottle-1-5l",
+    "seoTitle": "PowerBottle 1.5L - Büyük Kapasiteli Su Bidonu",
+    "seoDescription": "PowerBottle 1.5L, uzun antrenmanlar için ideal büyük kapasiteli dumbbell formunda su bidonu. Dayanıklı ve ergonomik tasarım.",
+    "category": "su-bidonu"
+  }
+]

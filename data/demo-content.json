@@ -1,0 +1,37 @@
+{
+  "homepage_title": "PowerBottle - Sporcular için Su Bidonu",
+  "homepage_description": "PowerBottle, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu. Dayanıklı, ergonomik ve şık tasarım ile antrenmanlarınızı bir üst seviyeye taşıyın.",
+  "hero_title": "PowerBottle ile",
+  "hero_subtitle": "Sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu. Dayanıklı, ergonomik ve şık tasarım ile antrenmanlarınızı bir üst seviyeye taşıyın.",
+  "hero_image": "/images/hero-main.jpg",
+  "features_title": "Neden PowerBottle?",
+  "features_subtitle": "Sporcular için özel olarak tasarlanmış özellikler ve kalite standartları",
+  "testimonials_title": "Müşteri Yorumları", 
+  "testimonials_subtitle": "PowerBottle kullanan sporcuların gerçek deneyimleri",
+  "faq_title": "Sık Sorulan Sorular",
+  "faq_subtitle": "PowerBottle hakkında merak ettiklerinizin cevapları",
+  "newsletter_title": "Güncel Kalın",
+  "newsletter_subtitle": "PowerBottle'dan özel indirimler, yeni ürün duyuruları ve spor ipuçları için e-posta listemize katılın.",
+  "contact_title": "İletişime Geçin",
+  "contact_subtitle": "Sorularınız, önerileriniz veya destek ihtiyaçlarınız için bizimle iletişime geçin. Uzman ekibimiz size yardımcı olmaktan mutluluk duyar.",
+  "about_title": "PowerBottle Hakkında",
+  "about_description": "PowerBottle, sporcuların ihtiyaçlarını karşılamak için tasarlanmış yenilikçi bir su bidonu markasıdır. Dumbbell formundaki ergonomik tasarımımız, antrenman sırasında kolay kullanım sağlarken, BPA-free malzememiz güvenliğinizi garanti eder.",
+  "shipping_info": "Türkiye geneli 1-2 iş günü içinde teslimat. 500 TL ve üzeri alışverişlerde kargo ücretsiz.",
+  "return_policy": "14 gün içinde ürünü iade edebilirsiniz. Ürün kullanılmamış ve orijinal ambalajında olmalıdır.",
+  "warranty_info": "PowerBottle 2 yıl garanti ile gelir. Normal kullanımda oluşan üretim hataları ücretsiz olarak değiştirilir.",
+  "company_info": {
+    "name": "PowerBottle",
+    "address": "Atatürk Caddesi No:123, Beşiktaş, İstanbul 34353, Türkiye",
+    "phone": "+90 555 123 45 67",
+    "email": "info@powerbottle.com",
+    "working_hours": "Pazartesi - Cuma: 09:00 - 18:00, Cumartesi: 10:00 - 16:00"
+  },
+  "social_links": {
+    "facebook": "https://facebook.com/powerbottle",
+    "instagram": "https://instagram.com/powerbottle", 
+    "twitter": "https://twitter.com/powerbottle",
+    "youtube": "https://youtube.com/powerbottle"
+  },
+  "seo_keywords": "su bidonu, spor, fitness, dumbbell, PowerBottle, spor ekipmanı, BPA-free, dayanıklı su bidonu",
+  "og_image": "/images/og-image.jpg"
+}
