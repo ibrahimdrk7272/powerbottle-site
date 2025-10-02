@@ -22,55 +22,19 @@ export default function Home({ products, content }) {
   return (
     <>
       <Head>
-        <title>{content.homepage_title || 'PowerBottle - Sporcular için Su Bidonu'}</title>
-        <meta 
-          name="description" 
-          content={content.homepage_description || 'PowerBottle, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu. Dayanıklı, ergonomik ve şık tasarım.'} 
-        />
+        <title>{content.homepage_title}</title>
+        <meta name="description" content={content.homepage_description} />
         <meta name="keywords" content="su bidonu, spor, fitness, dumbbell, PowerBottle, spor ekipmanı" />
-        <meta property="og:title" content={content.homepage_title || 'PowerBottle - Sporcular için Su Bidonu'} />
-        <meta property="og:description" content={content.homepage_description || 'PowerBottle, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu.'} />
-        <meta property="og:image" content={content.homepage_image || '/images/og-image.jpg'} />
+        <meta property="og:title" content={content.homepage_title} />
+        <meta property="og:description" content={content.homepage_description} />
+        <meta property="og:image" content={content.homepage_image} />
         <meta property="og:type" content="website" />
         <meta property="og:url" content={process.env.NEXT_PUBLIC_SITE_URL} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content={content.homepage_title || 'PowerBottle - Sporcular için Su Bidonu'} />
-        <meta name="twitter:description" content={content.homepage_description || 'PowerBottle, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu.'} />
-        <meta name="twitter:image" content={content.homepage_image || '/images/og-image.jpg'} />
-      </Head>
-      <Layout>
-        <Hero />
-        <ProductShowcase products={products} />
-        <Features />
-        <Testimonials />
-        <FAQ />
-        <Newsletter />
-      </Layout>
-    </>
-  )
-}
+        <meta name="twitter:title" content={content.homepage_title} />
+        <meta name="twitter:description" content={content.homepage_description} />
+        <meta name="twitter:image" content={content.homepage_image} />
 
-// Airtable yerine static dummy data
-export async function getStaticProps() {
-  const products = [
-    { id: 1, name: 'PowerBottle 1L', price: '₺199', image: '/images/bottle1.jpg' },
-    { id: 2, name: 'PowerBottle 2L', price: '₺249', image: '/images/bottle2.jpg' }
-  ]
-
-  const content = {
-    homepage_title: 'PowerBottle - Sporcular için Su Bidonu',
-    homepage_description: 'Dayanıklı, ergonomik ve şık dumbbell formunda su bidonu.',
-    homepage_image: '/images/og-image.jpg'
-  }
-
-  return {
-    props: {
-      products,
-      content
-    }
-  }
-}
-""
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -79,8 +43,8 @@ export async function getStaticProps() {
               "@context": "https://schema.org",
               "@type": "Product",
               "name": "PowerBottle",
-              "description": content.homepage_description || 'PowerBottle, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu.',
-              "image": products[0]?.images?.[0] || '/images/product-1.jpg',
+              "description": content.homepage_description,
+              "image": products[0]?.image || '/images/product-1.jpg',
               "brand": {
                 "@type": "Brand",
                 "name": "PowerBottle"
@@ -101,39 +65,34 @@ export async function getStaticProps() {
       </Head>
       
       <Layout>
-        <Hero content={content} />
+        <Hero />
         <ProductShowcase products={products} />
-        <Features content={content} />
-        <Testimonials content={content} />
-        <FAQ content={content} />
-        <Newsletter content={content} />
+        <Features />
+        <Testimonials />
+        <FAQ />
+        <Newsletter />
       </Layout>
     </>
   )
 }
 
+// ✅ Airtable yerine static dummy data
 export async function getStaticProps() {
-  try {
-    const [products, content] = await Promise.all([
-      getProducts(),
-      getContent()
-    ])
-    
-    return {
-      props: {
-        products: products.filter(p => p.isActive),
-        content
-      },
-      revalidate: 300 // Revalidate every 5 minutes
-    }
-  } catch (error) {
-    console.error('Error in getStaticProps:', error)
-    return {
-      props: {
-        products: [],
-        content: {}
-      },
-      revalidate: 60
+  const products = [
+    { id: 1, name: 'PowerBottle 1L', price: '₺199', image: '/images/bottle1.jpg' },
+    { id: 2, name: 'PowerBottle 2L', price: '₺249', image: '/images/bottle2.jpg' }
+  ]
+
+  const content = {
+    homepage_title: 'PowerBottle - Sporcular için Su Bidonu',
+    homepage_description: 'Dayanıklı, ergonomik ve şık dumbbell formunda su bidonu.',
+    homepage_image: '/images/og-image.jpg'
+  }
+
+  return {
+    props: {
+      products,
+      content
     }
   }
 }
