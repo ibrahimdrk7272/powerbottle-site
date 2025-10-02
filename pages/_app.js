@@ -1,7 +1,7 @@
 import '../styles/globals.css'
 import { Toaster } from 'react-hot-toast'
 import { CartProvider } from '../context/CartContext'
-import { Analytics } from '../components/Analytics'
+import Analytics from '../components/Analytics'
 
 export default function App({ Component, pageProps }) {
   return (

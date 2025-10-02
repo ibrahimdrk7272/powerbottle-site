@@ -7,7 +7,6 @@ import Features from '../components/Features'
 import Testimonials from '../components/Testimonials'
 import FAQ from '../components/FAQ'
 import Newsletter from '../components/Newsletter'
-import { getProducts, getContent } from '../lib/airtable'
 
 export default function Home({ products, content }) {
   const [mounted, setMounted] = useState(false)
@@ -38,7 +37,40 @@ export default function Home({ products, content }) {
         <meta name="twitter:title" content={content.homepage_title || 'PowerBottle - Sporcular için Su Bidonu'} />
         <meta name="twitter:description" content={content.homepage_description || 'PowerBottle, sporcular için özel olarak tasarlanmış dumbbell formunda su bidonu.'} />
         <meta name="twitter:image" content={content.homepage_image || '/images/og-image.jpg'} />
-        
+      </Head>
+      <Layout>
+        <Hero />
+        <ProductShowcase products={products} />
+        <Features />
+        <Testimonials />
+        <FAQ />
+        <Newsletter />
+      </Layout>
+    </>
+  )
+}
+
+// Airtable yerine static dummy data
+export async function getStaticProps() {
+  const products = [
+    { id: 1, name: 'PowerBottle 1L', price: '₺199', image: '/images/bottle1.jpg' },
+    { id: 2, name: 'PowerBottle 2L', price: '₺249', image: '/images/bottle2.jpg' }
+  ]
+
+  const content = {
+    homepage_title: 'PowerBottle - Sporcular için Su Bidonu',
+    homepage_description: 'Dayanıklı, ergonomik ve şık dumbbell formunda su bidonu.',
+    homepage_image: '/images/og-image.jpg'
+  }
+
+  return {
+    props: {
+      products,
+      content
+    }
+  }
+}
+""
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
